@@ -49,10 +49,10 @@ make run
 ```bash
 
 # 500,000 элементов, 2 потока
-make run-custom ARRAY_SIZE=500000 THREADS=2
+make run-custom ARRAY_SIZE=500000 NUM_THREADS=2
 
 # 2,000,000 элементов, 8 потоков
-make run-custom ARRAY_SIZE=2000000 THREADS=8
+make run-custom ARRAY_SIZE=2000000 NUM_THREADS=8
 ```
 
 ### Запуск теста производительности

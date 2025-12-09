@@ -12,7 +12,7 @@ run: $(TARGET)
 	./$(TARGET)
 
 run-custom: $(TARGET)
-	./$(TARGET) $(ARRAY_SIZE) $(THREADS)
+	./$(TARGET) $(ARRAY_SIZE) $(NUM_THREADS)
 
 clean:
 	rm -f $(TARGET)
