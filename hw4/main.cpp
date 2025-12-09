@@ -163,10 +163,10 @@ int main(int argc, char* argv[]){
     
     // Выводим результаты
     std::cout << "Array size: " << array_size << " double elements\n";
-    std::cout << "Sequential add: " << duration_sequential.count() << " ms\n";
-    std::cout << "SIMD-SSE add (_mm_add_pd): " << duration_sse.count() << " ms\n";
+    std::cout << "Sequential add: " << duration_sequential << std::endl;
+    std::cout << "SIMD-SSE add (_mm_add_pd): " << duration_sse << std::endl;
 #ifdef __AVX__
-    std::cout << "SIMD-AVX add (_mm256_add_pd): " << duration_avx.count() << " ms\n";
+    std::cout << "SIMD-AVX add (_mm256_add_pd): " << duration_avx << std::endl;
 #endif
     std::cout << "Speedup with SSE: " << (double)duration_sequential.count() / duration_sse.count() << "x\n";
 #ifdef __AVX__
