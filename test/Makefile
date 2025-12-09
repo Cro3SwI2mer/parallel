@@ -39,7 +39,7 @@ help:
 	@echo "  make run           - Собрать и запустить программу"
 	@echo "  make run-custom    - Собрать и запустить программу с указанием параметра N"
 	@echo "  make clean         - Очистить сгенерированные файлы"
-	@echo "  make benchmark     - Тест на производительность с разным размером входного N"
+	@echo "  make benchmark     - Тест на производительность с разными N"
 	@echo "  make help          - Показать справку"
 
 .PHONY: all run run-custom clean benchmark help
