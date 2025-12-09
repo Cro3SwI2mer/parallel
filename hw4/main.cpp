@@ -107,6 +107,11 @@ void avx_add(const double* a, const double* b, double* result, size_t n){
 #endif
 
 int main(int argc, char* argv[]){
+    //Сопроводительная информация, из комментария в начале файла
+    std::cout << "Номер студента: 2\n";
+    std::cout << "Демонстрация полезности следующей инструкции: _mm_add_pd\n";
+    std::cout << "Дополнительно, если есть поддержка AVX: _mm256_add_pd\n";
+
     // Параметры программы
     size_t array_size = 1000000;
 
