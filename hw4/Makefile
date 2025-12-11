@@ -60,4 +60,4 @@ help:
 	@echo "  make benchmark     - Тест на производительность с разным размером входного массива"
 	@echo "  make help          - Показать справку"
 
-.PHONY: all run test test-small test-medium test-large build-debug build-release check-cpu assembly asm-diff clean help
+.PHONY: all run run-custom debug check-cpu assembly clean benchmark help
